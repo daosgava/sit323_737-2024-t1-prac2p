@@ -19,3 +19,8 @@ To check if Node.js is installed and view its version, run:
 
 ```bash
 node --version
+```
+## Running the server
+```bash
+node server.js
+```
