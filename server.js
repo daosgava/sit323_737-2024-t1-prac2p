@@ -1,8 +1,3 @@
-/* 
-    Create a simple server that serves the index.html file to the browser
-    The server will listen on port 3000 and will serve the index.html file
-*/
-
 const http = require('http');
 const fs = require('fs');
 const path = require('path');
