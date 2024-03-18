@@ -6,9 +6,9 @@ const hostname = '127.0.0.1';
 const port = 3000;
 
 const server = http.createServer((request, response) => {
-    // Gets the file index.html path
+    // Get the file index.html path
     const filePath = path.join(__dirname, 'index.html');
-    // Gets the file stats
+    // Get the file stats
     const stat = fs.statSync(filePath);
 
     // Set the response headers
@@ -17,7 +17,7 @@ const server = http.createServer((request, response) => {
         'Content-Length': stat.size
     });
 
-    // Reads the index.html and pipe it to the response object to send the file content to the browser
+    // Read the index.html and pipe it to the response object to send the file content to the browser
     const readStream = fs.createReadStream(filePath);
     readStream.pipe(response);
 })
